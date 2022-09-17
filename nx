@@ -1,0 +1,60 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.mt:maven-web-application:war:0.0.1
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: javax.servlet:javax.servlet-api:jar -> duplicate declaration of version 3.1.0 @ line 87, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.mt:maven-web-application >--------------------
+[INFO] Building maven-web-application 0.0.1
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-web-application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ec2-user/maven-web-application/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ maven-web-application ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-web-application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ec2-user/maven-web-application/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ maven-web-application ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ maven-web-application ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ maven-web-application ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [maven-web-application] in [/home/ec2-user/maven-web-application/target/team17_part2]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/ec2-user/maven-web-application/src/main/webapp]
+[INFO] Webapp assembled in [48 msecs]
+[INFO] Building war: /home/ec2-user/maven-web-application/target/team17_part2.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ maven-web-application ---
+[INFO] Installing /home/ec2-user/maven-web-application/target/team17_part2.war to /home/ec2-user/.m2/repository/com/mt/maven-web-application/0.0.1/maven-web-application-0.0.1.war
+[INFO] Installing /home/ec2-user/maven-web-application/pom.xml to /home/ec2-user/.m2/repository/com/mt/maven-web-application/0.0.1/maven-web-application-0.0.1.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ maven-web-application ---
+Uploading to nexus: http://54.170.228.33:8081/repository/tesla-releases/com/mt/maven-web-application/0.0.1/maven-web-application-0.0.1.war
+Progress (1): 0.1/5.4 MBProgress (1): 0.1/5.4 MBProgress (1): 0.2/5.4 MBProgress (1): 0.2/5.4 MBProgress (1): 0.3/5.4 MBProgress (1): 0.3/5.4 MBProgress (1): 0.4/5.4 MBProgress (1): 0.4/5.4 MBProgress (1): 0.5/5.4 MBProgress (1): 0.5/5.4 MBProgress (1): 0.6/5.4 MBProgress (1): 0.6/5.4 MBProgress (1): 0.7/5.4 MBProgress (1): 0.7/5.4 MBProgress (1): 0.8/5.4 MBProgress (1): 0.9/5.4 MBProgress (1): 0.9/5.4 MBProgress (1): 1.0/5.4 MBProgress (1): 1.0/5.4 MBProgress (1): 1.1/5.4 MBProgress (1): 1.1/5.4 MBProgress (1): 1.2/5.4 MBProgress (1): 1.2/5.4 MBProgress (1): 1.3/5.4 MBProgress (1): 1.3/5.4 MBProgress (1): 1.4/5.4 MBProgress (1): 1.4/5.4 MBProgress (1): 1.5/5.4 MBProgress (1): 1.5/5.4 MBProgress (1): 1.6/5.4 MBProgress (1): 1.7/5.4 MBProgress (1): 1.7/5.4 MBProgress (1): 1.8/5.4 MBProgress (1): 1.8/5.4 MBProgress (1): 1.9/5.4 MBProgress (1): 1.9/5.4 MBProgress (1): 2.0/5.4 MBProgress (1): 2.0/5.4 MBProgress (1): 2.1/5.4 MBProgress (1): 2.1/5.4 MBProgress (1): 2.2/5.4 MBProgress (1): 2.2/5.4 MBProgress (1): 2.3/5.4 MBProgress (1): 2.3/5.4 MBProgress (1): 2.4/5.4 MBProgress (1): 2.4/5.4 MBProgress (1): 2.5/5.4 MBProgress (1): 2.6/5.4 MBProgress (1): 2.6/5.4 MBProgress (1): 2.7/5.4 MBProgress (1): 2.7/5.4 MBProgress (1): 2.8/5.4 MBProgress (1): 2.8/5.4 MBProgress (1): 2.9/5.4 MBProgress (1): 2.9/5.4 MBProgress (1): 3.0/5.4 MBProgress (1): 3.0/5.4 MBProgress (1): 3.1/5.4 MBProgress (1): 3.1/5.4 MBProgress (1): 3.2/5.4 MBProgress (1): 3.2/5.4 MBProgress (1): 3.3/5.4 MBProgress (1): 3.4/5.4 MBProgress (1): 3.4/5.4 MBProgress (1): 3.5/5.4 MBProgress (1): 3.5/5.4 MBProgress (1): 3.6/5.4 MBProgress (1): 3.6/5.4 MBProgress (1): 3.7/5.4 MBProgress (1): 3.7/5.4 MBProgress (1): 3.8/5.4 MBProgress (1): 3.8/5.4 MBProgress (1): 3.9/5.4 MBProgress (1): 3.9/5.4 MBProgress (1): 4.0/5.4 MBProgress (1): 4.0/5.4 MBProgress (1): 4.1/5.4 MBProgress (1): 4.2/5.4 MBProgress (1): 4.2/5.4 MBProgress (1): 4.3/5.4 MBProgress (1): 4.3/5.4 MBProgress (1): 4.4/5.4 MBProgress (1): 4.4/5.4 MBProgress (1): 4.5/5.4 MBProgress (1): 4.5/5.4 MBProgress (1): 4.6/5.4 MBProgress (1): 4.6/5.4 MBProgress (1): 4.7/5.4 MBProgress (1): 4.7/5.4 MBProgress (1): 4.8/5.4 MBProgress (1): 4.8/5.4 MBProgress (1): 4.9/5.4 MBProgress (1): 5.0/5.4 MBProgress (1): 5.0/5.4 MBProgress (1): 5.1/5.4 MBProgress (1): 5.1/5.4 MBProgress (1): 5.2/5.4 MBProgress (1): 5.2/5.4 MBProgress (1): 5.3/5.4 MBProgress (1): 5.3/5.4 MBProgress (1): 5.4/5.4 MBProgress (1): 5.4 MB                        Uploading to nexus: http://54.170.228.33:8081/repository/tesla-releases/com/mt/maven-web-application/0.0.1/maven-web-application-0.0.1.pom
+Progress (1): 4.1/4.2 kBProgress (1): 4.2 kB                        [INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.041 s
+[INFO] Finished at: 2022-09-12T03:50:34Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy (default-deploy) on project maven-web-application: Failed to deploy artifacts: Could not transfer artifact com.mt:maven-web-application:war:0.0.1 from/to nexus (http://54.170.228.33:8081/repository/tesla-releases/): transfer failed for http://54.170.228.33:8081/repository/tesla-releases/com/mt/maven-web-application/0.0.1/maven-web-application-0.0.1.war, status: 400 Repository does not allow updating assets: tesla-releases -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
