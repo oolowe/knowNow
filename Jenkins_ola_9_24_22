@@ -1,0 +1,41 @@
+node{
+	def mavenHome = tool name: 'mave3'
+	stage('1cloneCode'){
+		git "https://github.com/oolowe/knowNow"
+		//sh " git clone https://github.com/oolowe/knowNow"
+	}
+	
+
+	stage('2Test&Build'){
+		sh "${mavenHome}/bin/mvn clean package"
+		//bat "${mavenHome}/bin/mvn clean package"
+	}
+	stage('3codeQuality'){
+		sh "${mavenHome}/bin/mvn sonar:sonar"
+	}
+	stage('4uploadArtifacts'){
+		sh "${mavenHome}/bin/mvn deploy"
+	}
+	stage('5deploy2UAT'){
+		sh "echo 'deploy to UAT' "
+		deploy adapters: [tomcat9(credentialsId: '5b00c7f8-4037-4cfa-a5d9-c81bc4f9fb7b', path: '', url: 'http://3.249.247.65:8080/')], contextPath: null, war: 'target/*war'
+
+	}
+	stage('6approvalGate'){
+		sh "echo 'Ready for review' "
+		timeout(time:'9', unit:'DAYS') {
+		input message: 'Application ready for deployment, Please review and approve'
+		}
+	}
+	stage('7deploy2Prod'){
+		deploy adapters: [tomcat9(credentialsId: '5b00c7f8-4037-4cfa-a5d9-c81bc4f9fb7b', path: '', url: 'http://3.249.247.65:8080/')], contextPath: null, war: 'target/*war'
+	}
+	stage('8emailNotification'){
+		emailext body: '''Hello,
+Please be informed that it is deployed.
+
+Kind regards,
+Ola''', subject: 'Jenkins Production Job', to: 'oloweolatunde@yahoo.com'
+	}
+	
+}
